@@ -14,7 +14,11 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
     rsync \
     libxml2-dev \
     libcurl4-openssl-dev \
-    libssl-dev
+    libssl-dev \
+    libbz2-dev \
+    liblzma-dev \
+    libpng-dev \
+    bzip2
 
 #add r packages
 ADD rpackages.R /tmp/
