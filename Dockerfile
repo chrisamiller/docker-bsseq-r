@@ -1,4 +1,8 @@
-FROM rocker/r-ver:3.5.1
+#FROM rocker/r-ver:3.5.1
+FROM bioconductor/release_core2:R3.5.2_Bioc3.8
+MAINTAINER c.a.miller@wustl.edu
+LABEL Image for ad-hoc bisulfite seq processing in R
+
 #add a few useful tools
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
     curl \
