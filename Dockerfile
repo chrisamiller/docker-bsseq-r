@@ -23,5 +23,3 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
 #add r packages
 ADD rpackages.R /tmp/
 RUN R -f /tmp/rpackages.R
-
-ENTRYPOINT [ "/bin/bash" ]
