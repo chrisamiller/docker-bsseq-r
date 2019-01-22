@@ -1,5 +1,4 @@
-#FROM r-base
-FROM r-ver:3.5.1
+FROM rocker/r-ver:3.5.1
 #add a few useful tools
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
     curl \
@@ -17,3 +16,4 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
 ADD rpackages.R /tmp/
 RUN R -f /tmp/rpackages.R
 
+ENTRYPOINT [ "/bin/bash" ]
