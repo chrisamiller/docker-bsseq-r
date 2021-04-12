@@ -1,6 +1,4 @@
-#FROM rocker/r-ver:3.5.1
-FROM bioconductor/release_core2:R3.5.2_Bioc3.8
-MAINTAINER c.a.miller@wustl.edu
+FROM bioconductor/bioconductor_docker:RELEASE_3_12
 LABEL Image for ad-hoc bisulfite seq processing in R
 
 #add a few useful tools
